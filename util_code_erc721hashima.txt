@@ -1,0 +1,142 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+import "../ERC721.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+/**
+ * @dev ERC721 token with hash power inyected.
+ */
+abstract contract ERC721Hashima is ERC721,Ownable {
+    using Strings for uint256;
+    using Counters for Counters.Counter;
+    
+    Counters.Counter private _tokenIds;
+
+    uint256 BLOCK_TOLERANCE=100;
+    mapping(address=>uint256) private tolerance;    
+    // Optional mapping for token URIs
+    mapping(uint256 => string) private _tokenURIs;
+
+    //check the string use by the user is not repeat
+    mapping(string=>bool)public _names;
+
+    mapping(uint256=>Hashi)_hashis ;
+
+    struct Hashi {
+      uint256 tokenId;
+      string tokenName;
+      string tokenURI;
+      address payable currentOwner;
+      address payable previousOwner;
+      uint256 price;
+      bool forSale;
+      uint256 stars;
+      uint256 blockNumber;
+      string nonce;
+      bool sign;
+  }
+
+
+
+
+    event GameStart(uint256 _blocknumber);
+    event Checked(bool respuesta);
+
+    /**
+     * @dev Stars the game so the user can mint a Hashima.
+     *The time is express in Block number.
+     * Requirements:
+     *Star the game before mint, other case, the function will fail
+     */
+  function initGame()external virtual{
+        uint256 _block=block.number;
+        tolerance[msg.sender]=_block;
+        emit GameStart(_block);
+  }
+   
+
+        /**
+     * @dev This is the Hashima adaptation of ERC-721 NFT standart.
+        _nonce=> random number that proofs the computational power
+     */
+    function check(
+        uint256 _stars,
+        string memory _hashID,
+        string memory _nonce,
+        string memory _uri) external virtual returns(bool,bytes32,uint256) {
+            require(tolerance[msg.sender]+BLOCK_TOLERANCE>block.number,"tolerance is expire");
+            require(_names[_hashID]==false,"name is busy");
+            require(tolerance[msg.sender]!=0,"Tolerance cannot be 0");
+            require(msg.sender != address(0));
+
+            bool respuesta=true;
+            uint256 _id=0;
+
+            bytes32 _hashFinal=sha256(abi.encodePacked(_hashID,_nonce,Strings.toString(block.number)));
+            for (uint256 index = 0; index < _stars; index++) {
+            if (_hashFinal[index]!=0x00) {
+                    respuesta=false;  
+                }
+            
+            }
+            if (respuesta) {
+                //convierto la string utilizada a true para que no pueda ser utilizada.    
+                _names[_hashID]=true; 
+                
+                _id=createHashimaItem(
+                    _uri,
+                    _hashID,
+                    _nonce,
+                    _stars);
+
+                emit Checked(respuesta);
+            
+            }
+            
+            return(respuesta,_hashFinal,_id);
+        
+   
+    }
+
+    
+  function createHashimaItem(
+    string memory tokenURI,
+    string memory _data,
+    string memory _nonce,
+    uint256 _stars) private returns (uint256){
+
+    _tokenIds.increment();
+
+    uint256 newItemId = _tokenIds.current();
+    _mint(msg.sender, newItemId);
+
+    bool sign=false;
+    if(owner()==msg.sender){
+      sign=true;
+    }
+
+    Hashi memory newHashima= Hashi(
+    _tokenIds.current(),//token id of hashima
+    _data,//string pick by the miner
+    tokenURI,
+    payable(msg.sender),
+    payable(address(0)),
+    0,
+    false,//for sale
+    _stars,
+    block.number,
+    _nonce,
+    sign
+    );
+
+    _hashis[_tokenIds.current()] = newHashima;
+
+    return newItemId;
+
+  }
+
+
+}

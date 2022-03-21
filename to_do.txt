@@ -1,0 +1,8 @@
+*Fusionar animaciones NFT en power point
+*Implementar otra coleccion NFT y agregar hashima power
+*Agregar capacidad de subasta a los Hashimas.
+
+*Adaptar las colecciones de los usuarios en forma tal que no tarde tanto en cargar.
+*Botones de atras adelante en el show case
+
+
