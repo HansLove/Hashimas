@@ -2,9 +2,10 @@
 pragma solidity ^0.8.0;
 
 import './Hashima.sol';
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
-contract Auction {
+contract Auction is ReentrancyGuard {
   
     // Allowed withdrawals of previous bids
     mapping(address => uint) pendingReturns;
@@ -35,34 +36,40 @@ contract Auction {
 
     modifier isHashimaOwner(uint256 tokenId){
         address _owner=hashima.ownerOf(tokenId);
-        require(_owner==msg.sender,'Only the hashima owner can do it');
+        require(_owner==msg.sender,'Only hashiowner');
         _;
     }
 
 
-    function NewAuction(uint256 tokenId,uint256 _tolerance,
-        uint256 _minPrice)isHashimaOwner(tokenId) public{
-        require (msg.sender == hashima.ownerOf(tokenId), 'Sender must be owner');
+    function NewAuction(
+        uint256 tokenId,
+        uint256 _tolerance,
+        uint256 _minPrice)isHashimaOwner(tokenId) nonReentrant() public{
+
         require(!hashimaOnAction[tokenId],'this hashima is on bid');
-        
+        require(_tolerance>100,'At leats 100 blocks');
+        require(_minPrice>0,'Put somenthing on price');
+
         StructAuction memory _newAuction=StructAuction(
-            block.number+_tolerance,
-            _minPrice,
-            0,
-            address(0),
-            msg.sender,
-            true
+            block.number+_tolerance,//periodo de subasta
+            _minPrice,//precio minimo
+            0,//apuesta mas grande
+            address(0),//el que aposto mas
+            msg.sender,//nft seller
+            true//activate
             );
 
         auctions[tokenId]=_newAuction;
         hashimaOnAction[tokenId]=true;
 
-        
-        bool forSale=hashima.getHashima(tokenId).forSale;
-        if(forSale){
-            hashima.toggleForSale(tokenId,0);
-        }
+        //First transfer ownership to this contract
+        //and then change the 'forSale' in case is on.
         hashima.transferFrom(msg.sender, address(this), tokenId);
+
+        // bool forSale=hashima.getHashima(tokenId).forSale;
+        // if(forSale){
+        //     hashima.toggleForSale(tokenId,0);
+        // }
         
     }
 
@@ -73,6 +80,7 @@ contract Auction {
         uint256 _highestBid=_auction.nftHighestBid;
         address _high_bidder=_auction.nftHighestBidder;
 
+        require(_auction.active,'Not activate');
         require(block.number <= blockTime,"Auction already ended");
         require(msg.value > _highestBid,"There already is a higher bid.");
 
@@ -103,27 +111,51 @@ contract Auction {
     }
 
     //esta funciona la llama el usuario al termionar el tiempo de subasta
-    function auctionEnd(uint256 tokenId) public returns(bool){
+    function auctionEnd(uint256 tokenId) public{
         StructAuction memory _auction=auctions[tokenId];
         address _highestBidder=_auction.nftHighestBidder;
         address _nftSeller=_auction.nftSeller;
         uint256 _high_bid=_auction.nftHighestBid;
-        bool activo=_auction.active;
         uint256 block_time=_auction.periodoSubasta;
 
-        require(block.timestamp >= block_time, "Auction not yet ended.");
-        require(activo, "auctionEnd has already been called.");
+        require(block.number > block_time, "Auction not yet ended.");
+        require(_auction.active, "auctionEnd has already been called.");
 
-        _auction.active=false;
-        auctions[tokenId]=_auction;
-        hashimaOnAction[tokenId]=false;
-        
-        emit AuctionEnded(_highestBidder, _high_bid);
-
-        (bool sent, ) = _nftSeller.call{value: _high_bid}("");
-        if(sent){
-            hashima.transferFrom(address(this), _highestBidder, tokenId);
+        if(_highestBidder==address(0)){
+            //nadie puso dinero, devolver al propietario
+           _auction.active=false;
+            auctions[tokenId]=_auction;
+            hashimaOnAction[tokenId]=false;
+            hashima.transferFrom(address(this), _nftSeller, tokenId);
+            emit AuctionEnded(_nftSeller, _high_bid);  
+        }else{        
+            (bool sent, ) = _nftSeller.call{value: _high_bid}("");
+            if(sent){
+                _auction.active=false;
+                auctions[tokenId]=_auction;
+                hashimaOnAction[tokenId]=false;
+                hashima.transferFrom(address(this), _highestBidder, tokenId);
+                emit AuctionEnded(_highestBidder, _high_bid);
+            }
         }
-        return sent;
+         
+    }
+
+
+    function getMaxBid(uint256 tokenID)public view returns(uint256){
+        return auctions[tokenID].nftHighestBid;
+    }
+
+    function getMinPrice(uint256 tokenID)external view returns(uint256){
+        return auctions[tokenID].minPrice;
+    }
+
+    function onAuction(uint256 tokenID)external view returns(bool){
+        return hashimaOnAction[tokenID];
+    }
+
+
+    function period(uint256 tokenID)external view returns(uint256){
+        return auctions[tokenID].periodoSubasta-block.number;
     }
 }

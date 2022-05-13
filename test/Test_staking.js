@@ -14,18 +14,17 @@
 // it('Creacion Hashima NFT:',async()=>{
 //     // await auction.NewAuction()
 //     await hashima.initGame()
-//     await hashima.check(1,'aaron','30','ja.com')
+//     await hashima.check(0,'aaron','30','ja.com')
     
-
 // })
 
 
 // it('Aprovamos el Hashima NFT a favor del Staking contract:',async()=>{
-//     var _data=await hashima.approve(staking.address,1)
+//     await hashima.approve(staking.address,1)
 // })
 
 // it('Deposito del NFT en el contrato',async()=>{
-//     var _data=await staking.deposit(1)
+//     await staking.deposit(1)
 // })
 
 // it('Preguntamos al contrato si el Hashima esta en Staking',async()=>{
@@ -40,26 +39,23 @@
 
 // it('Avanzado 1 bloque y calculamos new reward',async()=>{
 //     await time.advanceBlock()
-
-//     var _data=await staking.calculateReward(minter,1)
-//     console.log("Reward obtenido: ",_data.toString())
-// })
-
-// it('Avanzado 1 bloque y calculamos new reward',async()=>{
-//     await time.advanceBlock()
-
 //     var _data=await staking.calculateReward(minter,1)
 //     console.log("Reward obtenido: ",_data.toString())
 // })
 
 
-// it('tomamos lo generado',async()=>{
+// it('tomamos lo generado por bob',async()=>{
 //     await staking.collect(bob,1)
+// })
+
+// it('tomamos lo generado por minter',async()=>{
+//     await staking.collect(minter,1)
 // })
 
 // it('Balance del dueño',async()=>{
 //     var _data=await staking.balanceOf(bob)
-//     console.log("Balance usuario: ",_data.toString())
+//     var _data2=await staking.balanceOf(minter)
+//     console.log("Balance bob: ",_data.toString(),"Balance minter: ",_data2.toString())
 // })
 
 // it('New reward',async()=>{

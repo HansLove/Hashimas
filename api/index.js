@@ -11,7 +11,7 @@ require('./database')
 app.use(morgan('dev'))
 app.use(cors())
 
-app.set('port',5000)
+app.set('port',5001)
 
 const ruta1=require('./routes/route.hashpower')
 const ruta2=require('./routes/routes.hashimas')

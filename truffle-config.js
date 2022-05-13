@@ -25,7 +25,7 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-  contracts_build_directory:"./front/src/components/build",
+  contracts_build_directory:"./front/src/blockchain/build",
   // contracts_build_directory:"./api/build",
 
   networks: {

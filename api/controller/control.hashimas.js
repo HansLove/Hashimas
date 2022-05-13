@@ -2,10 +2,8 @@ const sha256=require('crypto-js/sha256')
 const Web3=require('web3')
 const JsonHashima=require('../build/Hashima.json')
 
-// const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 const web3 = new Web3("http://localhost:8545"||Web3.givenProvider)
-// const web3 = new Web3("http://localhost:8545")
-// const web3=new Web3(window.ethereum)
+
 
 
 control={}
