@@ -5,7 +5,7 @@ const control=require('../controller/control.hashpower')
 router.get('/:diff/:hash/:tolerance',control.hashPower)
 
 
-router.post('/',control.guardarDatos)
+
 
 
 module.exports=router;

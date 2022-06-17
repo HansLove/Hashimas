@@ -25,8 +25,10 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-  contracts_build_directory:"./front/src/blockchain/build",
-  // contracts_build_directory:"./api/build",
+  // contracts_build_directory:"./front/src/blockchain/build",
+  contracts_build_directory:"./api/build",
+
+
 
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default

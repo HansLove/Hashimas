@@ -3,9 +3,7 @@ const app=express()
 const bodyParser=require('body-parser')
 const morgan=require('morgan')
 var cors = require('cors')
-
-
-// const{mongoose}=require('./database')
+require('dotenv').config();
 require('./database')
 
 app.use(morgan('dev'))
@@ -18,7 +16,6 @@ const ruta2=require('./routes/routes.hashimas')
 const ruta3=require('./routes/route.user')
 
 
-// app.use(bodyParser.urlencoded({ extended: true, limit: '10000000mb'})); 
 app.use(bodyParser.urlencoded({ extended: true, limit: '10000000mb'})); 
 
 app.use(express.static('./lib/views/'));

@@ -69,3 +69,15 @@
         }, 3500);
         return () => clearTimeout(timer);
       }, []);
+
+
+
+////////////////////////// CACHE///////////////
+    const SaveCache=(datosContratoInteligente)=>{
+        let _coleccion=datosContratoInteligente.collection
+        let objeto={lista:_coleccion}
+        Cookies.set('ids',JSON.stringify(objeto))  
+     
+    }
+    let value=Cookies.get('ids')
+    let lista_coleccion_cache=JSON.parse(value)

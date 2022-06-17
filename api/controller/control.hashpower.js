@@ -5,6 +5,7 @@ const Web3=require('web3')
 
 control={}
 
+//Calcula el poder de computo necesario
 control.hashPower=async(req,res)=>{
     var dificultad=req.params.diff
     var _hash=req.params.hash
@@ -40,36 +41,5 @@ control.hashPower=async(req,res)=>{
    
 }
 
-// const CheckContractId=async(_id)=>{
-//     var _contrato=await loadHashLockContract()
-//     var _resultado=_contrato.methods.getContract(_id).call()
-//     console.log('resultado del contrato: ',_resultado)
-// }
 
-// const loadHashLockContract=async() =>{
-//     const id=await web3.eth.net.getId()
-//     const deployedNetwork2=ContractHashJSON.networks[id]
-
-//     const hash_time_contrato=new web3.eth.Contract(
-//         ContractHashJSON.abi,
-//         deployedNetwork2.address
-//     )
-
-//     return  hash_time_contrato
-
-
-// }
-
-control.guardarDatos=async(req,res)=>{
-    const nuevo=new User(req.body)
-    await nuevo.save()
-    .then(docs=>{
-        
-        res.status(200).json({
-            data:docs
-        })
-    })
-}
-
- 
 module.exports=control;

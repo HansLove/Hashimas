@@ -1,0 +1,549 @@
+[
+    {
+        "name":"Riku Flaners",
+        "number":1,
+        "type":["pixel","dream"],
+        "description":"Riku is the first hashima, very powerful. It is from the A universe.Created by Satoshi Nakamoto by accident.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "speaks":true,
+        "ability":["Cosmic Love","Nakamoto Punch"],
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/riku_1.png?alt=media&token=a1c5a666-2502-4ffc-82aa-0cd947f77488",
+        "img":"https://gateway.pinata.cloud/ipfs/QmWRxLTs8U6hKq2cLnawCupQS9wsC6Dy2RaAWfisxKCLYp?preview=1",
+        "look":{
+            "antropomorfo":false,
+            "color":["rgb(109, 3, 236)","violet"],
+            "extremidades":0,
+            "height":"1000000px"
+            
+            },
+        "diet":[]
+    }
+    ,
+    {
+        "name":"Magu Sam",
+        "number":2,
+        "type":["water","chaos"],
+        "description":
+        "Magu is from the dark-water around the universes. Some people say that Magu saw the Satoshi from T universe to the eyes and now is curse.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "ability":["Rugi Pull","Invisible Problem"],
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/magu_1.png?alt=media&token=dfd92390-7fe1-4487-9bed-de327f5076d1",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-25%20a%20la%28s%29%2014.06.53.png",
+        "look":{
+            "antropomorfo":false,
+            "color":["deepskyblue","forestgreen"],
+            "extremidades":0,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+    {
+        "name":"Alen Gregory",
+        "number":3,
+        "type":["fire","light"],
+        "description":"Alen caused the destruction of universe H in his fight with Nose Atu in block 45. Alen feeds on suns and uses atomic energy from its tale to destroy enemies.Alen is the only survivor of H universe",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "ability":["Rising Sun","Baby Fire"],
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/alen_1.png?alt=media&token=163d9e37-baac-47a9-abb7-22c74efa62bd",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-25%20a%20la%28s%29%2013.55.25.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":false,
+            "color":["firebrick","lightcoral"],
+            "extremidades":0,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+    {
+        "name":"Keke Tole",
+        "number":4,
+        "type":["shadow","water"],
+        "description":"Keke Tole lives in the dark-sea around the universes. Some say that Keke ate a whole universe in block 24.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "ability":["Dark Water","Addictive Sadness"],
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/keke_1.png?alt=media&token=26fe4815-67b6-4697-9844-129a12328b0b",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-25%20a%20la%28s%29%2017.47.43.png",
+        "speaks":false,
+        "look":{
+            "antropomorfo":false,
+            "color":["navy","lightcoral"],
+            "extremidades":0,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+    {
+        "name":"Nose Atu",
+        "number":5,
+        "type":["air","spectro"],
+        "description":"Nose Atu is a air hashima from the B universe. Nose Atu is the fastest hashima.Nose propelles itself with waves of energy from its three legs and is driven with the front leg. Watch over a large part of the universes",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "ability":["Divine Vibe","Chilling Eye"],
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/aaron.png?alt=media&token=f6e86a4b-ca76-4e85-b033-536d846cd246",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-25%20a%20la%28s%29%2012.59.27.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":false,
+            "color":["saddlebrown","dodgerblue"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+
+    {
+        "name":"Pain O",
+        "number":6,
+        "type":["sound","object"],
+        "ability":["Noisy Key","Destructive Sound"],
+        "description":"Pain O has the spirit of the Satoshi of B universe. Only a few can touch him, if you are not ready, you die. You can control a whole planet with the music of Pain",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/pain.png?alt=media&token=38c52849-2b22-4d8e-a8da-562179942175",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-26%20a%20la%28s%29%209.49.32.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":false,
+            "color":["limegreen","hotpink"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+    {
+        "name":"Nice Jerry",
+        "number":7,
+        "type":["glitch","air"],
+        "description":"Nice Cigar needs to take the air from diferent planets all over the universes for survive. Nice Cigar destroys 'Y' universe in the 'battle of Mr Hakins'",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "ability":["Nebula Smoke","Smoky Vision"],
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/nice_1.png?alt=media&token=b4b757d7-5d45-4bd7-bc5a-f49d98a17589",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-30%20a%20la%28s%29%202.06.30.png",
+        "speaks":false,
+        "look":{
+            "antropomorfo":false,
+            "color":["orange","orangered"],
+            "extremidades":0,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+    {
+        "name":"Davi Lant",
+        "number":8,
+        "type":["plant","spectro"],
+        "ability":["Wild Stars","Soul Halving"],
+        "description":"Davi Lant is a green life form planted by Satoshi.Its a very chill Hashima.Dont like fights.Its the lider of party ruling in the universe C",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/davi_2.png?alt=media&token=57ab8f7d-4c47-412c-ac10-761dcaa5f31b",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-30%20a%20la%28s%29%202.11.26.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":false,
+            "color":["green","gold"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    }
+    ,
+    {
+        "name":"Babi Magnu",
+        "number":9,
+        "type":["psychic","monster"],
+        "ability":["Brain Power","Super Luck"],
+        "description":
+        "Death has only lost one game in his life, that losing piece was cursed forever, the eternal memory of defeat and revenge that never occurred, since a debt had to be paid.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/babi.png?alt=media&token=b031f8dc-4639-44a4-b980-c400ccaceddb",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-25%20a%20la%28s%29%2010.44.29.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":false,
+            "color":["silver","coral"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    } 
+    ,
+    {
+        "name":"Eli Morfing",
+        "number":10,
+        "type":["dream","astro"],
+        "ability":["Cloudy Sun","Cuantic Dream"],
+        "description":"Eli Morfing is a dream from Chipi Sharp.Eli can transport itself between universes thanks to the dream cuantic pass.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/eli_1.png?alt=media&token=71ad07dd-4a36-4737-9b71-65ddaade755d",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-12-04%20a%20la%28s%29%2018.25.34.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":false,
+            "color":["skyblue","indigo"],
+            "extremidades":0,
+            "height":"1000000px"
+            
+            }
+        
+    } 
+    ,
+    {
+        "name":"Pata Yeye",
+        "number":11,
+        "type":["chaos","astro"],
+        "ability":["Check Mate","Im Satoshi"],
+        "description":"Pata Yeye's race lived more than 10,000 years in human time. They take a long time to grow.Hashima with great military skills, actually Pata Yeye has the most powerful army in the R universe",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/pata_2.png?alt=media&token=a3aa69c0-0b2b-4c95-ad4d-ee4f279efd7b",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-12-04%20a%20la%28s%29%2018.41.08.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["darkgreen","greenyellow"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    } 
+    ,
+    {
+        "name":"Chipi Sharp",
+        "number":12,
+        "type":["hada","monster"],
+        "description":"Chipi is the dream god from A universe. Chipi is the hashima responsable for the creation of Eli Morfing.",
+        "hp":100,
+        "attack":100,
+        "ability":["Dont Exists","Bubble"],
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/shipi_1.png?alt=media&token=b2871890-564f-4797-8146-5d76659f3dcd",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-25%20a%20la%28s%29%2012.27.59.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["maroon","mediumaquamarine"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    } ,
+    {
+        "name":"Supa Flai",
+        "number":13,
+        "type":["organic","monster"],
+        "ability":["She Said","Not Pyramidal"],
+        "description":"A multidimensional explosion caused by Riku Flaners create Supa Flai.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/supa.png?alt=media&token=95ab76aa-eefe-4cb1-88ef-831c2c7074b5",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-12-05%20a%20la%28s%29%2019.48.42.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["mediumspringgreen","mediumvioletred"],
+            "extremidades":4,
+            "height":"1000000px"
+            
+            }
+    } ,
+    {
+        "name":"Marc Lotrix",
+        "number":14,
+        "type":["electric","magic"],
+        "ability":["Dancing Star","Atomic Nature"],
+        "description":"Marc Lotrix is the death from the Z universe. Its looking for Alen Gregory, the Hashima that save the life that belongs to Lotrix",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/mark.png?alt=media&token=433bf899-6568-46bb-8c80-665495c95d00",
+        "img":"https://gateway.pinata.cloud/ipfs/QmVppB3nCAWBou3JjspR5kYRcyxQuRdjKtVrzHw88Vcaz9?preview=1",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["darkgoldenrod","plum"],
+            "extremidades":6,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Nayix Bukice",
+        "number":15,
+        "type":["ice","organic"],
+        "ability":["Washintgon Curve","Galatic Surf"],
+        "description":"Some crazy doctor from universe A use the parts of a few persons to create this hashima. Nayix can freeze an entire planetary system.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/nayix.png?alt=media&token=f5ebb2b8-acaa-471e-b103-81d1ad86f3fd",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-12-05%20a%20la%28s%29%2020.36.25.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["indianred","mediumblue"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Greto Blow",
+        "number":16,
+        "type":["earth","spectro"],
+        "ability":["Political Shyness","Nuclear Nightmare"],
+        "description":"Greto ate the planet 'earth' in block 667. Greto is from the other side",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/greto_1.png?alt=media&token=7618dba0-a313-4c07-99df-4d9dfbc0e364",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-12-04%20a%20la%28s%29%2019.12.10.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["peru","sienna"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Kiby Winton",
+        "number":17,
+        "type":["magic","object"],
+        "ability":["Random Magic","Pink Money"],
+        "description":"Kiby is from the imaginary side. Was born in block -1.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/kiby_1.png?alt=media&token=7e0bfc02-71c8-4571-b540-9979618f12d3",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-26%20a%20la%28s%29%2010.21.01.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["crimson","teal"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Bobi Lovy",
+        "number":18,
+        "type":["monster","organic"],
+        "ability":["Deceptive Bark","Natural Arrogance"],
+        "description":"Bobi Lovy is an accident.It was created by Nice Cigar",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/boby_1.png?alt=media&token=01793c5e-eac6-4b19-b584-26847e6efbb1",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-12-04%20a%20la%28s%29%2019.16.45.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["#620F66","#13660F"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Foto Don",
+        "number":19,
+        "type":["light","electric"],
+        "ability":["Repeat Engine","Shallow Body"],
+        "description":"Foto Don was born in the universe A central sun. Its a very fast hashima, can absorve light and use it as internal energy.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/foto.png?alt=media&token=3b505d6f-2f0e-4819-9c9d-da44e6abaccb",
+        "img":"https://gateway.pinata.cloud/ipfs/QmbAaAyn89w4C8NqWFf7TjnZiK2QXRpbR78HENsntBeaAu/Captura%20de%20Pantalla%202021-11-28%20a%20la%28s%29%2010.10.46.png",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["goldenrod","turquoise"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+
+    {
+        "name":"Obi Ben",
+        "number":20,
+        "type":["spectro","hada"],
+        "ability":["Bubble Breaker","Falling Home"],
+        "description":"Obi Ben used to be the devil's teddy bear in the B universe. Obi killed god from the B universe in block 65",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "img":"https://gateway.pinata.cloud/ipfs/QmXZ5naUwqdCPfmAS8HKSsifDonLbBhBH7cyUYLPEFPsaD?preview=1",
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/obi_1.png?alt=media&token=df660137-9cf3-4152-b3b6-4b0e26416d8b",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["darkcyan","mediumorchid"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Trumpy Dumpy",
+        "number":21,
+        "type":["chaos","sound"],
+        "ability":["Quantum Wall","Mexican Kiss"],
+        "description":"Trumpy was created by Nose Atu in block 2. Trumpy can move very fast inside a universe because of its sound-legs organic system.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/trumpy_1.png?alt=media&token=e9b2c7b2-9f2d-4768-953e-0fce04c49aae",
+        "img":"https://gateway.pinata.cloud/ipfs/QmToHaT5bg1RmXjhzePndSUyy8WBvZzFANCZU9MxCDaxj7?preview=1",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["crimson","darkorange"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    },
+    {
+        "name":"Lo La",
+        "number":22,
+        "type":["chaos","hada"],
+        "ability":["Universal Force","World Dumbbell"],
+        "description":"Lo La is from B universe. Her body is made of hash power and cosmic energy, her soul is made of love. She can carry the world on her shoulders, or destroy it.",
+        "hp":100,
+        "attack":100,
+        "defense":100,
+        "specialAttack":100,
+        "specialDefense":100,
+        "speed":100,
+        "resistance":100,
+        "fire":"https://firebasestorage.googleapis.com/v0/b/hashimas.appspot.com/o/lola_1.png?alt=media&token=ef216f83-2427-4ad9-9882-e68a5e5c472d",
+        "img":"https://gateway.pinata.cloud/ipfs/QmdrzJ2tUT51XSsBPniC7xbhS5qPo2qmzBhuKXDvyr2KZN?preview=1",
+        "speaks":true,
+        "look":{
+            "antropomorfo":true,
+            "color":["royalblue","deeppink"],
+            "extremidades":2,
+            "height":"1000000px"
+            
+            }
+    }
+
+    
+]
+
