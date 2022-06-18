@@ -15,7 +15,7 @@ let binance_test_net='https://data-seed-prebsc-1-s1.binance.org:8545/'
 
 //////////////
 const iniciarContratoHashima=async(req,res)=>{
-
+    //Aqui inicio y llamo la llave para firmar transacciones
     const pk = process.env.privateKey
 
     //Networks
@@ -155,6 +155,12 @@ control.verificarPago=async(req,res)=>{
 
   }
 
+
+control.dameRandom=(req,res)=>{
+    res.status(200).json({
+        mensaje:'hola"'
+    })
+}
 
 
 
